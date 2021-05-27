@@ -14,6 +14,15 @@ app.get('/api/appointments', async (req, res) => {
   }
 })
 
+app.get('/api/appointments/postman', async (req, res) => {
+  try {
+    var results = await query();
+    return res.status(400).json(results)
+  } catch (err) {
+    return res.status(500).json(err)
+  }
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
