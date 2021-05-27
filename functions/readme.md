@@ -1,0 +1,1 @@
+Esta función solo sirve en Netlify como una serverless function
