@@ -48,7 +48,7 @@ async function query() {
 
 function getUpcomingBusinessDays() {
   let moment = new Date()
-  let date10daysFromNow = dfns.addDays(moment, 9)
+  let date10daysFromNow = dfns.addDays(moment, 11)
 
   let daysBetween = dfns.eachDayOfInterval({ start: moment, end: date10daysFromNow })
 
@@ -92,6 +92,7 @@ function getTimeAvailability(row) {
   })
   if (content[1] && typeof content[1] === 'string') {
     content[1] = content[1].replace('\n\t\t\t\t', '')
+    content[1] = content[1].replace(' Solicitar cita click aquí', '')
   }
   return content
 }

@@ -24,6 +24,7 @@ var app = new Vue({
         this.loading = false
       } catch (err) {
         console.error(err)
+        alert('Error al cargar citas \n' + JSON.stringify({ nico: 'wow'}, null ,2))
       }
     },
 

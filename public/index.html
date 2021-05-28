@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yellow House Appointmens</title>
+  <title>Citas Casa Amarilla Costa Rica</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
   <div id="app">
-    <h1>Appointments</h1>
+    <h1>Citas</h1>
+    <p>Este sitio sirve para consultar el calendario en los próximos 8 días laborales a la fecha actual, ya que hacerlo manuamente tomaría mucho tiempo.</p>
     <div class="my">
-      <a href="https://www.rree.go.cr/?sec=servicios&cat=autenticaciones&cont=734">Yellow house appointments link</a>
+      <a target="_blank" href="https://www.rree.go.cr/?sec=servicios&cat=autenticaciones&cont=734">Yellow house appointments link</a>
     </div>
     <div>
       <details v-for="(availability, day) in data.report" class="my">
