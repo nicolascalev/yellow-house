@@ -1,4 +1,4 @@
-const query = require('..appointments')
+const query = require('../appointments.js')
 
 exports.handler = async (event, context) => {
   try {
